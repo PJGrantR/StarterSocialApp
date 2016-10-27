@@ -1,0 +1,6 @@
+framework module Pods_StarterSocialApp {
+  umbrella header "Pods-StarterSocialApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
