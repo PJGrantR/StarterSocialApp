@@ -25,6 +25,7 @@
 		69E03BF18986AD59C342E5E2 /* Pods-StarterSocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterSocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarterSocialApp/Pods-StarterSocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 		71E2C8F09F0AB2AD056DECD4 /* Pods-StarterSocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterSocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarterSocialApp/Pods-StarterSocialApp.release.xcconfig"; sourceTree = "<group>"; };
 		92297352D5D833339EDE1690 /* Pods_StarterSocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarterSocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35D11091DC3DACC006F90D7 /* StarterSocialApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarterSocialApp.entitlements; sourceTree = "<group>"; };
 		A35DB68E1DC1969E000D842E /* StarterSocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterSocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35DB6911DC1969E000D842E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A35DB6931DC1969E000D842E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		A35DB6901DC1969E000D842E /* StarterSocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				A35D11091DC3DACC006F90D7 /* StarterSocialApp.entitlements */,
 				A393B16F1DC27C6E00B67A84 /* Util */,
 				A35DB6A71DC19C6A000D842E /* Controller */,
 				A35DB6A61DC19C66000D842E /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3XT3US5KJ5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,6 +402,7 @@
 			baseConfigurationReference = 69E03BF18986AD59C342E5E2 /* Pods-StarterSocialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarterSocialApp/StarterSocialApp.entitlements;
 				DEVELOPMENT_TEAM = 3XT3US5KJ5;
 				INFOPLIST_FILE = StarterSocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -409,6 +417,7 @@
 			baseConfigurationReference = 71E2C8F09F0AB2AD056DECD4 /* Pods-StarterSocialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarterSocialApp/StarterSocialApp.entitlements;
 				DEVELOPMENT_TEAM = 3XT3US5KJ5;
 				INFOPLIST_FILE = StarterSocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
