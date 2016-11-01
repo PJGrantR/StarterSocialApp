@@ -23,6 +23,7 @@
 		A3C62D161DC283D50099EA93 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C62D151DC283D50099EA93 /* FancyField.swift */; };
 		A3C62D181DC286EA0099EA93 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C62D171DC286EA0099EA93 /* FancyButton.swift */; };
 		A3E23F901DC27E60004A6DE5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E23F8F1DC27E60004A6DE5 /* RoundButton.swift */; };
+		A3F467F01DC9432800708B50 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F467EF1DC9432800708B50 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		A3C62D151DC283D50099EA93 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		A3C62D171DC286EA0099EA93 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		A3E23F8F1DC27E60004A6DE5 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		A3F467EF1DC9432800708B50 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		A35DB6A51DC19C5F000D842E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3F467EF1DC9432800708B50 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				A37B4AD31DC80A03004E496A /* CircleView.swift in Sources */,
 				A3C62D161DC283D50099EA93 /* FancyField.swift in Sources */,
 				A35DB6941DC1969E000D842E /* SignInVC.swift in Sources */,
+				A3F467F01DC9432800708B50 /* Post.swift in Sources */,
 				A3E23F901DC27E60004A6DE5 /* RoundButton.swift in Sources */,
 				A3C62D181DC286EA0099EA93 /* FancyButton.swift in Sources */,
 				A38604781DC90FC4005A13B7 /* DataService.swift in Sources */,
