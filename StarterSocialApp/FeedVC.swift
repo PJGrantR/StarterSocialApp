@@ -14,6 +14,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableview: UITableView!
     
+    
     var posts = [Post]()
 
     override func viewDidLoad() {
@@ -51,10 +52,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let post = posts[indexPath.row]
-        print("PETER-JON: \(post.caption)")
         
-       return tableview.dequeueReusableCell(withIdentifier: "PostCell")!
+        let post = posts[indexPath.row]
+        
+        if let cell = tableview.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+        }else {
+            return PostCell()
+        }
     }
 
     
